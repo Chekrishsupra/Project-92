@@ -15,7 +15,7 @@ function send() {
     answer = parseInt(number1) + parseInt(number2);
     question_number = "<h4>" + number1 + "+" + number2;
     input_box = "<br>Answer : <input type='number' id='check_box'>";
-    check_button = "<br><br><button class='btn btn-info onclick='check()'>Check</button>";
+    check_button = "<br><br><button class='btn btn-info' onclick='check()'>Check</button>";
     row = question_number + input_box + check_button;
     document.getElementById("output").innerHTML = row;
     document.getElementById("output").style.display = "inline-block";
@@ -26,7 +26,7 @@ question_turn = "player1";
 answer_turn = "player2";
 function check() {
     get_answer = document.getElementById("check_box").value;
-    console.log("Answer in lower case = " + answer)
+    console.log("Answer is" + answer)
     if(get_answer == answer) {
         if(answer_turn == "player1") {
             player1_score = player1_score + 1;
